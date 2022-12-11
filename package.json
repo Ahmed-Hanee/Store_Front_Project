@@ -1,0 +1,51 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "Introduction to Routes : Routs Are Founf in Handler folder where every model got its handler model and its own routes,this is all routes in this project \r --------------------------------------------------------------------------------------------------------------------------------------------------------------\r (order_ProductsRoutes)\r -------------------------\r   app.get('/Show_All_Order_Products', Index_Handler)\r     app.get('/Show_Order_Products_By_Id/:id', Show_Handler_Order_Products)\r     app.post('/Create_New_Order_Products', Create_Handler_Order_Products)\r     app.delete('/Delete_Order_Products_By_Id/:id', Delete_Handler_Order_Products)\r     app.patch('/Update_Order_Products_By_Id/:id', Update_Handler_Order_Products)\r ----------------------------------------------------------------------------------------------    \r (ordeRoutes)\r -------------------------\r     app.get('/Show_All_Orders', Index_Handler)\r     app.get('/Show_Orders_By_Id/:id', Show_Handler_Order)\r     app.post('/Create_New_Order', Create_Handler_Order)\r     app.delete('/Delete_Orders_By_Id/:id', Delete_Handler_Order)\r     app.patch('/Update_Orders_By_Id/:id', Update_Handler_Order)\r     app.post('/orders/:id/products', addProduct)\r     app.get('/Show_Orders_By_User_Id/:id', Show_Order_By_User_ID) \r ------------------------------------------------------------------------------------------",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "nodemon src/Main_Server.ts",
+    "watch": "tsc-watch --esModuleInterop src/Main_Server.ts --outDir ./build --onSuccess 'node ./build/Main_Server.ts'",
+    "test": " SET ENV=test&& db-migrate reset --env test && db-migrate --env test up && npm run jasmine",
+    "pretest": "npm run build",
+    "tsc": "tsc",
+    "jasmine": "jasmine",
+    "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/jasmine": "^4.3.0",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.11.9",
+    "@types/pg": "^8.6.5",
+    "@types/prettier": "^2.7.1",
+    "@types/supertest": "^2.0.12",
+    "cross-env": "^7.0.3",
+    "jasmine": "^4.4.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "prettier": "^2.7.1",
+    "supertest": "^6.3.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.4"
+  }
+}
