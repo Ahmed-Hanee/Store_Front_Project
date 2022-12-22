@@ -12,6 +12,9 @@ Your job is to architect the database, its tables and columns to fulfill the dat
 Your application needs to be ready for beta tests, so it needs to have tests, keep user information secure, and provide user authentication tokens that are ready to integrate with the frontend.
 
 
+https://user-images.githubusercontent.com/95107740/209143931-c1731975-3d75-4edf-9b38-cf1f72e2f634.mp4
+
+
 ***psql Commands 
 -------------------------------------------------------------------------------------------------------------------
 Server [localhost]:
