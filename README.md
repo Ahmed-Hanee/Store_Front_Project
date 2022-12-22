@@ -2,6 +2,7 @@
                                                        BUILD STORE FRONT APPLICATION
                                                                 PROJECT2
 #Project Summary
+
 Imagine that you are a web developer at a small company. The company stakeholders have decided they want to set up an online store to make their great product ideas available for purchase -- and they want you and your co-worker to build it.
 
 The stakeholders have put together a list of requirements for this online store. Your co-worker will be building the frontend and you will be supplying the JavaScript API. The requirements have been collected into requirements document.
