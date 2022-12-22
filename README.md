@@ -1,4 +1,17 @@
-****psql Commands 
+                                             EGY_FWD ADVANCED FULL_STACK WEB DEVELOPMENT PROGRAM
+                                                       BUILD STORE FRONT APPLICATION
+                                                                PROJECT2
+#Project Summary
+Imagine that you are a web developer at a small company. The company stakeholders have decided they want to set up an online store to make their great product ideas available for purchase -- and they want you and your co-worker to build it.
+
+The stakeholders have put together a list of requirements for this online store. Your co-worker will be building the frontend and you will be supplying the JavaScript API. The requirements have been collected into requirements document.
+
+Your job is to architect the database, its tables and columns to fulfill the data requirements and craft a RESTful API that exposes that information to the frontend developer.
+
+Your application needs to be ready for beta tests, so it needs to have tests, keep user information secure, and provide user authentication tokens that are ready to integrate with the frontend.
+
+
+***psql Commands 
 -------------------------------------------------------------------------------------------------------------------
 Server [localhost]:
 Database [postgres]: Store_Front_DB_Test
